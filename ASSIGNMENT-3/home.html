@@ -1,0 +1,663 @@
+<!----WT ASSIGNMENT- 2--------------
+  BY : 1602-18-737-049 (MSM SARVANI)  IT-A
+       1602-18-737-050 (K SRIVALLI )  IT-A
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-2</title>
+
+  <!---------------------------------------Links TO  our style.css and script.js------------------------>
+  <link rel="stylesheet" href="style.css">
+  
+
+  <!----------------------- Bootstarp 4------------------------------------------------------->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-------------------Links to our icons Through Font-awesome-------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+
+<!--------------------------------------------------Body Begins---------------------------------------------------->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="80" onscroll="myfunc()">
+
+
+
+
+
+  <!---------------------------------------NAVBAR - FIXED------------------------------------------------------------------------------------------------------->
+  <nav class="navbar navbar-expand-md  navbar-light py-3 shadow p-3 mb-5 bg-white rounded fixed-top " id="nav">
+    <!-----Brand Name-->
+    <a class="navbar-brand font-weight-bolder ml-5 " href="#home">
+      <h3>Elyseen</h3>
+    </a>
+    <!------Toggler Button when screen Minimizes-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-------Navbar Content---------------------->
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto mr-5">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#book1">
+            Book
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            Logout
+          </a>
+        </li>
+       
+        
+      </ul>
+    </div>
+  </nav><br><br><br>
+  <!------------------------------------NAVBAR ENDS-------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!----------Background Image of Homepage----------------------------------------------->
+
+
+  <section class="container-fluid d-flex justify-content-center align-items-center position-relative mb-0 " id="home">
+    <a type="button"
+      class="btn btn-lg btn-outline-light ml-5 mr-0  align-items-center p-2 text-info font-italic font-weight-bold"
+      href="#popular" id="btn">Explore</a>
+    <h2 id="text" class="p-3 text-center font-weight-bolder position-absolute "><span class="font-italic">It's time
+        for a new</span><br>Adventure</h2>
+    <img class="img-fluid h-100 position-absolute" src="images/bird1.png" id="bird1" alt="bird1">
+    <img class="img-fluid h-100 position-absolute" src="images/bird2.png" id="bird2" alt="bird1">
+    <img class="img-fluid h-100 position-absolute" src="images/forest.png" id="forest" alt="bird1">
+    <!--<a class="btn btn-light text-info d-inline-block p-2 mt-5 font-weight-bold" href="#popular" id="btn">Explore</a>-->
+    <img class="img-fluid h-100 position-absolute" src="images/rocks.png" id="rocks" alt="bird1">
+    <img class="img-fluid h-100 position-absolute mb-0" id="water" src="images/water.png" id="water" alt="bird1">
+  </section>
+
+  <!----------------Home Page END ------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+  <!----------------------Popular Places------EXPLORE  (Using CARDS)---------------------------------------------------->
+
+  <div class="container border-grey mt-0 bg-light" id="popular">
+    <h2 class="text-center font-weight-bolder">Most <span class="text-info">Popular</span>&nbsp;Places</h2>
+
+    <!-----CARD-1------------------>
+    <div class="card-deck">
+      <div class="card p-3 shadow mb-5 bg-white rounded">
+        <img class="card-img-top" height="250" src="images/hyderabad.jpg" alt="Card image cap"><br>
+        <div class="card-block">
+          <h4 class="card-title font-weight-bold ml-4"><u>Hyderabad</u></h4>
+          <p class="card-text ml-4">The City of Pearls</p>
+          <a href="#" class="btn btn-lg btn-outline-info ml-4" data-toggle="modal" data-target="#hyderabad">Learn
+            More</a>
+        </div>
+      </div>
+
+      <!-----------CARD 2--------------->
+      <div class="card p-3 shadow mb-5 bg-white rounded">
+        <img class="card-img-top" height="250" src="images/banglore.jpg"><br>
+        <div class="card-block">
+          <h4 class="card-title font-weight-bold ml-4"><u>Banglore</u></h4>
+          <p class="card-text ml-4">The Sillicon Valley</p>
+          <a href="#" class="btn btn-lg btn-outline-info ml-4" data-toggle="modal" data-target="#banglore">Learn
+            More</a> <br>
+        </div>
+      </div>
+
+
+      <!-----------CARD-3------------------->
+      <div class="card p-3 shadow mb-5 bg-white rounded">
+        <img class="card-img-top" height="250" src="images/delhi.jpg"><br>
+        <div class="card-block">
+          <h4 class="card-title font-weight-bold ml-4"><u>Delhi</u></h4>
+          <p class="card-text ml-4">The Mini India</p>
+          <a href="#" class="btn btn-lg btn-outline-info ml-4" data-toggle="modal" data-target="#delhi">Learn
+            More</a>
+        </div>
+      </div>
+    </div>
+
+  </div><br><br>
+
+
+  <!------------------------------------BY CLICKING ON LEARN MORE YOU OPEN A NEW WINDOW WHICH DISPLAYS A CCAROUSEL OF IMAGES OF THAT PLACE---------------------->
+
+  <!-----------------------------------------------HYDERABAD----------------------------->
+  <!--begin modal window-->
+  <div class="modal fade " id="hyderabad">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <div class="pull-left">Hyderabad</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <!--CAROUSEL STARTS  HERE-->
+          <!----------INDIACTORS------->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators bg-info mb-0">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <!-------------HYD CAROUSEL ELEMENT 1---------->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <figure>
+                  <img class="d-block w-100" src="images/h1.jpg" alt="First slide">
+                  <figcaption
+                    class="d-flex flex-wrap d-md-block bg-light justify-content-center text-center font-italic">
+                    <h5>Golconda Fort</h5>Situated in the Western part of the beautiful city of Hyderabad at a distance
+                    of approximately 9 km
+                    from Hussain Sagar Lake, Golconda Fort is one of the region's best-preserved monuments.
+                  </figcaption><br><br>
+                </figure>
+              </div>
+
+              <!----------HYD CAROUSEL ELEMENT 2----------------->
+              <div class="carousel-item">
+                <figure>
+                  <img class="d-block w-100" src="images/h2.png" alt="Second slide">
+                  <figcaption class="d-md-block bg-light justify-content-center text-center font-italic">
+                    <h5>Charminar</h5>Charminar certainly manages to hold the gaze. It is also famous for the market
+                    that sprawls around it and is called 'Laad' or 'Chudi' Bazaar.
+                  </figcaption><br><br>
+                </figure>
+              </div>
+
+              <!----------------HYD CAROUSEL ELEMENT 3-->
+              <div class="carousel-item">
+                <figure>
+                  <img class="d-block w-100" src="images/h3.jpg" alt="Third slide">
+                  <figcaption class="d-md-block bg-light justify-content-center text-center font-italic">
+                    <h5>Chowmahalla Palace</h5> In essence, Chowmahalla can be literally translated to mean 'Four
+                    Palaces'. The magnificent monument consists of two massive courtyards as well as a grand dining hall
+                    known as 'Khilawat'.
+                  </figcaption><br><br>
+                </figure>
+              </div>
+            </div>
+
+            <!--------------NEXT AND PREV ARROWS------------>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <!----------MODAL FOOTER------------------>
+        <div class="modal-footer">
+
+          <button class="btn-sm close" type="button" data-dismiss="modal">Close</button>
+          <!--end modal-footer-->
+        </div>
+        <!--end modal-content-->
+      </div>
+      <!--end modal-dialoge-->
+    </div>
+    <!--end myModal-->>
+  </div>
+
+
+
+
+
+
+
+
+  <!-----------------------------------------------BANGLORE WINDOW ------------------------------------------------->
+  <!--begin modal window-->
+  <div class="modal fade " id="banglore">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <div class="pull-left">Banglore</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <!--CAROUSEL STARTS  HERE-->
+          <!----------slide active INDIACTORS------->
+          <div id="car" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators bg-info mb-0">
+              <li data-target="#car" data-slide-to="0" class="active"></li>
+              <li data-target="#car" data-slide-to="1"></li>
+              <li data-target="#car" data-slide-to="2"></li>
+            </ol>
+
+            <!-------------banglore CAROUSEL ELEMENT 1---------->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <figure>
+                  <img class="d-block w-100" src="images/b1.jpg" alt="First slide">
+                  <figcaption
+                    class="d-flex flex-wrap d-md-block bg-light justify-content-center text-center font-italic">
+                    <h5>Bangalore Palace</h5>An epitome of great architecture and beauty, The Majestic Bangalore Palace
+                    preserves in it the spice of old regal opulence.
+                  </figcaption><br><br>
+                </figure>
+              </div>
+
+              <!----------banglore CAROUSEL ELEMENT 2----------------->
+              <div class="carousel-item">
+                <figure>
+                  <img class="d-block w-100" src="images/b2.jpg" alt="Second slide">
+                  <figcaption class="d-md-block bg-light justify-content-center text-center font-italic">
+                    <h5>Cubbon Park</h5>Spread over an area of 300 acres, Cubbon Park in the city of Bangalore is a
+                    major sightseeing attraction rich in green foliage.
+                  </figcaption><br><br>
+                </figure>
+              </div>
+
+              <!----------------banglore CAROUSEL ELEMENT 3-->
+              <div class="carousel-item">
+                <figure>
+                  <img class="d-block w-100" src="images/b3.jpg" alt="Third slide">
+                  <figcaption class="d-md-block bg-light justify-content-center text-center font-italic">
+                    <h5>Lal Bagh</h5> Lalbagh Botanical Garden is located in Bangalore and is nationally and
+                    internationally renowned centre for botanical artwork, scientific study of plants and also
+                    conservation of plants.
+                  </figcaption><br><br>
+                </figure>
+              </div>
+            </div>
+
+            <!--------------NEXT AND PREV ARROWS------------>
+            <a class="carousel-control-prev" href="#car" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#car" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <!----------MODAL FOOTER------------------>
+        <div class="modal-footer">
+
+          <button class="btn-sm close" type="button" data-dismiss="modal">Close</button>
+          <!--end modal-footer-->
+        </div>
+        <!--end modal-content-->
+      </div>
+      <!--end modal-dialoge-->
+    </div>
+    <!--end myModal-->>
+  </div>
+
+
+
+
+
+  <!-----------------------------------------------DELHI----------------------------------------->
+  <!--begin modal window-->
+  <div class="modal fade " id="delhi">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <div class="pull-left">DELHI</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <!--CAROUSEL STARTS  HERE-->
+          <!----------INDIACTORS------->
+          <div id="caro" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators bg-info mb-0">
+              <li data-target="#caro" data-slide-to="0" class="active"></li>
+              <li data-target="#caro" data-slide-to="1"></li>
+              <li data-target="#caro" data-slide-to="2"></li>
+            </ol>
+
+            <!-------------DELHI CAROUSEL ELEMENT 1---------->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <figure>
+                  <img class="d-block w-100" src="images/d1.jpg" alt="First slide">
+                  <figcaption
+                    class="d-flex flex-wrap d-md-block bg-light justify-content-center text-center font-italic">
+                    <h5>India Gate</h5>The All India War Memorial, popularly known as the India Gate, is located along
+                    the Rajpath in New Delhi.
+                  </figcaption><br><br>
+                </figure>
+              </div>
+
+              <!----------DELHI CAROUSEL ELEMENT 2----------------->
+              <div class="carousel-item">
+                <figure>
+                  <img class="d-block w-100" src="images/d2.jpg" alt="Second slide">
+                  <figcaption class="d-md-block bg-light justify-content-center text-center font-italic">
+                    <h5>Qutub Minar</h5>Qutub Minar is a minaret or a victory tower located in Qutub complex, a UNESCO
+                    World Heritage Site in Delhi's Mehrauli area. With the height of 72.5 metres (238 ft), Qutub Minar
+                    is the second tallest monument of Delhi.
+                  </figcaption><br><br>
+                </figure>
+              </div>
+
+              <!----------------DELHI CAROUSEL ELEMENT 3-->
+              <div class="carousel-item">
+                <figure>
+                  <img class="d-block w-100" src="images/d3.jpg" alt="Third slide">
+                  <figcaption class="d-md-block bg-light justify-content-center text-center font-italic">
+                    <h5>Red Fort</h5> The Red Fort is a historical fortification in the old Delhi area. Today, this
+                    monument is home to several museums that have an assortment of precious artefacts on display.
+                  </figcaption><br><br>
+                </figure>
+              </div>
+            </div>
+
+            <!--------------NEXT AND PREV ARROWS------------>
+            <a class="carousel-control-prev" href="#caro" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#caro" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <!----------MODAL FOOTER------------------>
+        <div class="modal-footer">
+
+          <button class="btn-sm close" type="button" data-dismiss="modal">Close</button>
+          <!--end modal-footer-->
+        </div>
+        <!--end modal-content-->
+      </div>
+      <!--end modal-dialoge-->
+    </div>
+    <!--end myModal-->>
+  </div>
+  <!-----------------------------------------------------POPULAR ( EXPLORE SECTION) ENDS------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+  <!-----------------------CONTACT US and BOOKING-------------------------------------------------->
+
+
+  <div class=" container-fluid d-flex flex-wrap shadow-lg p-3 mb-5 bg-white rounded" id="book1">
+
+    <!--------CONTACT US HEADING----------->
+    <div class="flex-fill bg-light mr-auto ">
+      <div class="jumbotron jumbotron-fluid ">
+        <div class="container">
+          <form action="./contactus" method="POST">
+          <h1 class="display-4 ">Contact Us At</h1>
+          <p class="lead"></p>
+        </div>
+      </div>
+      <!--------CONTACT US FORM ------------->
+      <div class="form-group m-3">
+
+        <label for="firstname">Name:</label>
+        <input type="text" class="form-control" id="firstname" placeholder="Enter Your Name" name="firstname" required>
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="uname" placeholder="Enter Email" name="email" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill appropriate email id.</div>
+      </div>
+      <div class="form-group m-3">
+        <label for="msg">Message:</label>
+        <input type="textarea" class="form-control" id="msg" placeholder="Enter Your Message" name="msg" required>
+      </div>
+      <div class="form-group form-check m-1">
+        <label class="form-check-label">
+          
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Check this checkbox to continue.</div>
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary m-3">Submit</button><br><br>
+      </form>
+    </div>
+
+
+
+
+    <!---------------Booking Container----------------------------------------->
+    <div class="col-md-4 col-md-pull-7 bg-info rounded-10 shadow p-3 " id="book">
+      <div class="booking-form">
+        <h1 class="display-4 text-white font-weight-bold"><u>Booking Form</u></h1><br><br>
+        <form action="./booking" method="POST">
+		 <div class="form-group">
+                <span class="form-label">Name:</span>
+                <input class="form-control" name="f-name" type="text" required><br>
+              </div>
+          <div class="form-group">
+           
+            <span class="form-label">Choose a desitanation:</span>
+                <select name="dest" class="form-control">
+                  <option value="hyderabad">Hyderabad</option>
+                  <option value="banglore">Banglore</option>
+                  <option value="delhi">Delhi</option>
+                </select>
+				<span class="select-arrow"></span>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <span class="form-label">Check In</span>
+                <input name="dept" class="form-control" type="date" required><br>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <span class="form-label">Check out</span>
+                <input class="form-control" name="arr" type="date" required><br>
+              </div>
+            </div>
+          </div>
+		  <div class="form-group">
+                <span class="form-label">Mobile No:</span>
+                <input class="form-control" name="mob" type="tel" required><br>
+              </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <span class="form-label">Rooms</span>
+                <select name="room" class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <span class="select-arrow"></span>
+              </div>
+            </div>
+			</div><br><br>
+          <div class="form-btn ">
+            <button class="btn btn-outline-light btn-lg ">Book Now</button><br>
+          </div>
+          <div class="col-sm-4"><br><br></div>
+        </form>
+      </div>
+    </div>
+  </div><br><br>
+
+
+  <!-------------------------------------CONTACT US AND BOOKING SECTION ENDS-->
+
+
+
+
+
+
+
+
+  <!-----------------------------------ABOUT US SECTION---------------------------------------->
+  <div class="container-fluid bg-info" id="about">
+
+    <h1 class="text-center font-weight-bolder">About us</h1>
+    <h2 class="text-center font-weight-bold font-italic"><span>Adventure awaits, <br>go find it.</span></h2>
+    <div class="text-center">
+      <p><img class="" src="images/logo.png" alt="our_logo">
+      </p>
+    </div>
+
+    <p class="text-center font-weight-bold">
+      Our goal is to provide best travelling services to the customer and search platform where a tourist can find
+      their
+      tour
+      places according to their choices. This system also helps to promote responsible and interesting tourism so
+      that
+      people can
+      enjoy their holidays at their favourite places. We develop this system to create and promote forms of tourism
+      that
+      provide
+      healthy interaction opportunities for tourists and locals and increase better understanding of different
+      cultures,
+      customs,
+      lifestyles, traditional knowledge and believes. This system also provide a better way to connect with various
+      events.<br><br>
+
+    </p><br><br>
+
+  </div>
+  <!-----------------------------------ABOUT US SECTION ENDS------------------------------------>
+
+
+
+
+
+  <!-- FOOTER---------------------------------------------------------------------------------- -->
+  <footer class="page-footer font-small  pt-4" style="background-color:black" id="footer">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase p-4 text-white display-4 font-weight-bold">Élyséen</h5>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <ul class="text-white list-unstyled p-4">
+            <li>
+              <a class="text-white" href="#nav">Home</a>
+            </li>
+            <li>
+              <a class="text-white" href="#!">Explore</a>
+            </li>
+            <li>
+              <a class="text-white" href="#!">About</a>
+            </li>
+
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+
+          <ul class="list-unstyled">
+
+            <i class="fas fa-phone text-white"></i><span class="text-white"> &nbsp; &nbsp;Call Us :
+              2499405909</span><br>
+            <i class="fas fa-map-marker-alt text-white"></i><span class="text-white">&nbsp; &nbsp;Vasavi College of
+              Engineering</span><br>
+            <i class="fas fa-envelope text-white"></i><span class="text-white">&nbsp; &nbsp;abc@gmail.com</span><br>
+            <i class="fas fa-copyright text-white"></i><span class="text-white">&nbsp; &nbsp;Sarvani Mullapudi :
+              737-049<br>
+              &emsp;&emsp;Sri Valli Knaumuri : 737-050</span>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+
+  </footer>
+  <!-- FOOOTER ENDS-------------------------------------- -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+/*----WT ASSIGNMENT- 2--------------
+  BY : 1602-18-737-049 (MSM SARVANI)  IT-A
+       1602-18-737-050 (K SRIVALLI )  IT-A
+*/
+body{
+    overflow-x: hidden;
+}
+
+#home{
+    height: 140vh;
+    margin: 0;
+    
+}
+
+#home img {
+    pointer-events: none;
+    object-fit: contain;
+}
+
+#home #text {
+    color: #094b65;
+    font-size: 10vw;
+    transform: translateY(-30%);
+}
+#home #text span {
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#btn{
+    border-radius: 40px;
+    overflow: hidden;
+    transform: translateY(-350px);
+    font-size: 4em;
+    letter-spacing: 5px;
+    margin-top: -200px;
+}
+.heading {
+    font-size: 4rem;
+    color: #333;
+}
+
+.heading span {
+    color: #094b65;
+}
+
+
+
+    
+
+    
+
+    
